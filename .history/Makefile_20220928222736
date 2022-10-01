@@ -1,0 +1,16 @@
+SRC=./main
+TARGET=./target
+GCC = g++
+CFLAGS = -o $(TARGET)/myfind.out
+RM = rm -rf
+
+all: clean default
+
+default: main.cpp
+
+main.cpp:
+	g++ -o myfind.out $(SRC)/main.cpp
+
+clean:
+    $(RM) $(TARGET)/*.out
+

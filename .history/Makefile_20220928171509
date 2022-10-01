@@ -1,0 +1,5 @@
+all: main
+
+main: main.cpp
+	g++ -o myfind.out main.cpp
+
